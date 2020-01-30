@@ -96,6 +96,9 @@
     <Content Include="Confirmation.aspx" />
     <Content Include="Contact US.aspx" />
     <Content Include="Document Upload.aspx" />
+    <Content Include="Images\favicon %281%29.ico" />
+    <Content Include="Images\front.png" />
+    <Content Include="Images\GNU-ICT Logo.jpg" />
     <Content Include="Index.aspx" />
     <Content Include="Log In.aspx" />
     <Content Include="Notification.aspx" />
@@ -103,6 +106,7 @@
     <Content Include="Students.aspx" />
     <Content Include="Personal Details.aspx" />
     <Content Include="Web.config" />
+    <Content Include="Images\Why ICT.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About Us.aspx.cs">

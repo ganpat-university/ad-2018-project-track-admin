@@ -12,20 +12,19 @@
 			body {
 				margin:0;
 				padding:0;
-				font-family:'Times New Roman', Times, serif;
 				line-height: 1.5em;
 			}
 			
 			#header {
-				background-color:maroon;
-				height: 100px;
+				background-color:green;
+				height: 125px;
 				font-style:normal;
-				font-family:'Times New Roman', Times, serif;
+				font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 			}
 			
 			#header h1 {
 				margin: 0;
-				padding-top: 15px;
+				padding-top:1em;
 			}
 
 		    main {
@@ -36,15 +35,16 @@
 		    }
 			
 			#nav{
-				background-color:floralwhite;
-				text-decoration-color:black;
+				background-color:black;
+				font-color:white;
+				
 
 			}
 			
 			#footer {
 				clear: left;
 				width: 100%;
-				background-color:maroon;
+				background-color:black;
 				text-align: center;
 				padding: 1px 0;
 			}
@@ -61,7 +61,7 @@
 			.innertube {
 				margin: 15px; /* Padding for content */
 				margin-top: 0;
-				color:deeppink;
+				color:white;
 				text-align:center;
 				
 				
@@ -88,7 +88,18 @@
 	.navbar a{
 		display:inline-block;
 		padding:10px;
-		outline-color:black;
+	
+	}
+	a:link{
+		color:white;
+
+	}
+	a:visited{
+		color:springgreen;
+	}
+	a:hover{
+		color:aqua;
+
 	}
 			
 			
@@ -121,13 +132,14 @@
 
 		<header id="header">
 			<div class="innertube">
+				<asp:Image ID="Image1" ImageUrl="~/GNU-ICT Logo.jpg"  ImageAlign="left" Width="199px" Height="123px" runat="server"  />
 				<h1>GNUICT</h1>
+			
 			</div>
 		</header>
 		<nav id="nav">
-				<div class="navbar">
-			
-					<ul>
+				<div class="navbar">						
+					<ul>	
 					<li><a href="index.aspx">HOME</a></li>
                         <li><a href="About%20Us.aspx">ABOUT US</a></li>
 						<li><a href="Students.aspx">STUDENT</a></li>
@@ -136,17 +148,17 @@
 					</ul>
 				</div>
 			</nav>
-
 		
-			
+		
 		<div id="wrapper">
 		
 			<main>
 				<div id="content">
 					<div class="innertube">
 						<h1></h1>
-						<p></p>
-                        <img alt="" src="Why ICT.png"/>
+
+
+                               
 					</div>
 				</div>
 				
@@ -158,8 +170,27 @@
 
 		<div>
 		    <form id="form1" runat="server">
-        <div>
+				
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+				<asp:ScriptManager ID="ScriptManager2" runat="server">
+    </asp:ScriptManager>
+				<div class="jumbotron">
+                                <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+									<ContentTemplate>
+                                        <asp:Timer ID="Timer3" runat="server"></asp:Timer>
+                                        <asp:Image ID="Image4" runat="server" />
+										</ContentTemplate>
+                                </asp:UpdatePanel>
+                                <asp:UpdatePanel ID="UpdatePanel2" runat="server">
+								<ContentTemplate>
+									<asp:Timer ID="Timer4" runat="server" EnableViewState="true" />"></asp:Timer>
+									<asp:Image ID="Image5" runat="server" EnableViewState="true"></asp:Image>
+									</ContentTemplate>
+										</asp:UpdatePanel>
+										</div>
+		
+			
+				
             </asp:ContentPlaceHolder>
         </div>
     </form>
