@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Track_Admin.Site1" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+   color:black;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: red;
+}
+
+.header{
+    height:80px;
+    width:100%;
+    color:rgb(255,206,101);
+    text-align:center;
+    font-size:30px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:rgb(163,38,33);
+    padding-top:2em;
+}
+
+.topnav a.active {
+  background-color: goldenrod;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+    <div class ="header"> <center>Ganpat University</center> </div>
+<br>
+<div class="topnav">
+  <a class="active" href="index.aspx">Home</a>
+  <a href="Student.aspx">Student</a>
+  <a href="StudentCorner.aspx">Student Corner</a>
+  <a href="Contact.aspx">Contact</a>
+  <a href="Registration.aspx">Login</a>
+
+ 
+</div>
+
+<div style="padding-left:16px">
+<form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+  </form>
+</div>
+
+</body>
+</html>
