@@ -4,12 +4,10 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
 <style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-   color:black;
-}
+
 
 .topnav {
   overflow: hidden;
@@ -29,46 +27,366 @@ body {
   background-color: #ddd;
   color: red;
 }
+.header {
+			margin-left: 10em;
+        align-content: center;
+        height: 80px;
+        width: 50%;
+        
+        text-align: center;
+        
+        padding-top: 20px;
+			}
 
-.header{
-    height:80px;
+
+    .topnav a.active {
+        background-color: goldenrod;
+        color: white;
+    }
+
+    .topnav .search-container {
+        float: right;
+    }
+
+    .topnav input[type=text] {
+        padding: 6px;
+        margin-top: 8px;
+        font-size: 17px;
+        border: none;
+    }
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+#footer{
+    background-color:black;
+    color:white;
     width:100%;
-    color:rgb(255,206,101);
-    text-align:center;
-    font-size:30px;
-    font-family:Arial, Helvetica, sans-serif;
-    background-color:rgb(163,38,33);
-    padding-top:2em;
+}
+.news{
+    column-count:2;
+    column-gap:10px;
+    column-width:40px;
+    color:gold;
+    background-color:maroon;
+}
+.news ul li a {
+    color:yellow;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
 }
 
-.topnav a.active {
-  background-color: goldenrod;
-  color: white;
+html {
+  font-size: 100%;
 }
+
+body {
+  font-family: acumin-pro, system-ui, sans-serif;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  font-size: 14px;
+  background-color: #f4f4f4;
+  align-items: start;
+  min-height: 100vh;
+}
+
+    .footer {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 30px 30px 20px 30px;
+        color:gold;
+        background-color:firebrick;
+        border-top: 1px solid #e5e5e5;
+    }
+
+        .footer > * {
+            flex: 1 100%;
+        }
+
+    .footer__addr {
+        margin-right: 1.25em;
+        margin-bottom: 2em;
+    }
+
+    .footer__logo {
+        font-family: 'Pacifico', cursive;
+        font-weight: 400;
+        text-transform: lowercase;
+        font-size: 1.5rem;
+    }
+
+    .footer__addr h2 {
+        margin-top: 1.3em;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .nav__title {
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+    .footer address {
+        font-style: normal;
+        color:snow;
+    }
+
+    .footer__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 36px;
+        max-width: max-content;
+        background-color: rgb(33, 33, 33, 0.07);
+        border-radius: 100px;
+        color:gold;
+        line-height: 0;
+        margin: 0.6em 0;
+        font-size: 1rem;
+        padding: 0 1.3em;
+    }
+
+    .footer ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .footer li {
+        line-height: 2em;
+    }
+
+    .footer a {
+        text-decoration: none;
+    }
+
+    .footer__nav {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+        .footer__nav > * {
+            flex: 1 50%;
+            margin-right: 1.25em;
+        }
+
+    .nav__ul a {
+        color:gold;
+    }
+
+    .nav__ul--extra {
+        column-count: 2;
+        column-gap: 1.25em;
+    }
+
+    .legal {
+        display: flex;
+        flex-wrap: wrap;
+        color:gold;
+    }
+
+    .legal__links {
+        display: flex;
+        align-items: center;
+    }
+
+    .heart {
+        color:gold;
+    }
+
+    @media screen and (min-width: 24.375em) {
+        .legal .legal__links {
+            margin-left: auto;
+        }
+    }
+
+    @media screen and (min-width: 40.375em) {
+        .footer__nav > * {
+            flex: 1;
+        }
+
+        .nav__item--extra {
+            flex-grow: 2;
+        }
+
+        .footer__addr {
+            flex: 1 0px;
+        }
+
+        .footer__nav {
+            flex: 2 0px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .topnav .search-container {
+            float: none;
+        }
+
+            .topnav a, .topnav input[type=text], .topnav .search-container button {
+                float: none;
+                display: block;
+                text-align: left;
+                width: 100%;
+                margin: 0;
+                padding: 14px;
+            }
+
+        .topnav input[type=text] {
+            border: 1px solid #ccc;
+        }
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+        }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {
+        }
+
+
 
 </style>
+
 </head>
 <body>
-    <div class ="header"> <center>Ganpat University</center> </div>
+  				
+			<div class="header">
+
+                <img alt="logo" src="ICT NEW LOGO.jpg" style="border-image:none; width:50%; height:80px; margin-left:10px; padding-top:1px; align-content:center;"/>
+			
+			
+			</div>
+		
+    
+    
 <br>
 <div class="topnav">
+
   <a class="active" href="index.aspx">Home</a>
   <a href="Student.aspx">Student</a>
   <a href="StudentCorner.aspx">Student Corner</a>
   <a href="Contact.aspx">Contact</a>
   <a href="Registration.aspx">Login</a>
-
+    <a href="Notifications.aspx">Notifications</a>
+     <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
  
 </div>
+   
+  
+  
 
 <div style="padding-left:16px">
 <form id="form1" runat="server">
         <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
-  </form>
-</div>
+            <asp:Contentplaceholder ID="ContentPlaceHolder1" runat="server">
+            </asp:Contentplaceholder>
 
+        </div>
+      
+  </form>
+    </div>
+<header>
+  <!-- Content -->
+</header>
+
+<main>
+  <!-- Content -->
+</main>
+
+<footer class="footer">
+  <div class="footer__addr">
+    <h1 class="footer__logo">GNUICT</h1>
+        
+    <h2>Contact</h2>
+    
+    <address>
+      Office 301, Ganesh Meridian Block A Chanakyapuri Road, S-G Highway Opp Kargil Petrol Pump, near Renaissance Ahmedabad Hotel, Ahmedabad, Gujarat 380060<br>
+          
+      <a class="footer__btn" href="info@ganpatuniversity.ac.in">Email Us</a>
+    </address>
+  </div>
+  
+  <ul class="footer__nav">
+    <li class="nav__item">
+      <h2 class="nav__title">Student Media</h2>
+
+      <ul class="nav__ul">
+           <li>
+          <a href="http://blog.ict.gnu.ac.in/">Blog</a>
+        </li>
+
+       <li>
+          <a href="https://www.ict.gnu.ac.in/content/student-faq">Student FAQ's</a>
+        </li>
+          <li>
+          <a href="https://www.ict.gnu.ac.in/content/videos-testimonials">Video Testimonials</a>
+        </li>
+          <li>
+          <a href="https://www.ict.gnu.ac.in/content/ict-media">ICT Media</a>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="nav__item nav__item--extra">
+      <h2 class="nav__title">Student Corner</h2>
+      
+      <ul class="nav__ul nav__ul--extra">
+         <li>
+          <a href="https://sites.google.com/a/ict.gnu.ac.in/gnu-ict-student-portal/">GNU-ICT Student Portal</a>
+        </li>
+
+        <li>
+          <a href="http://result.ganpatuniversity.ac.in/">Results</a>
+        </li>
+            
+        <li>
+           <a href=" https://www.ict.gnu.ac.in/content/academic-calender-2019-20">Academic calender</a>
+       </li>
+      </ul>
+    </li>
+    
+  
+  </ul>
+  
+  <div class="legal">
+    <p>&copy; All Copyrights reserved to Ganpat University.</p>
+    
+    <div class="legal__links">
+      <span>Made with <span class="heart">Asp.Net</span></span>
+    </div>
+  </div>
+</footer>
+    
+    
+    
 </body>
 </html>

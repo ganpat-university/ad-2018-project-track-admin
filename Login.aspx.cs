@@ -18,7 +18,7 @@ namespace Track_Admin
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            if ((email.Text == "admin@ganpatuniversity.ac.in") && pass.Text == "admin" && Conpass.Text == "admin")
+            if ((email.Text == "admin@ganpatuniversity.ac.in") && Conpass.Text == "admin")
             {
                 Response.Redirect("Database.aspx");
             }
@@ -38,15 +38,15 @@ namespace Track_Admin
                         flag = true;
                         Response.Redirect("index.aspx");
                     }
-                    else
-                    {
-                        Response.Write("UserName or Password does not Exist");
+                    //else
+                    //{
+                    //    Response.Write("UserName or Password does not Exist");
                        
-                    }
+                    //}
                 }
                 if (!flag)
                 {
-                    Response.Redirect("Login.aspx");
+                //  Response.Redirect("Login.aspx");
                     Response.Write("UserName or Password does not Exist");
                 }
                 sqlConnection.Close();

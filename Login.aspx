@@ -15,18 +15,19 @@
                     </td>
                 </tr>
 
-                <tr>
+       <%--       <tr>
                     <td><label>Password:</label></td>
                     <td>
                         <asp:TextBox ID="pass" runat="server" TextMode="Password" Height="29px" ></asp:TextBox>
                     </td>
-                </tr>
+                </tr>--%>
 
                 <tr>
-                    <td><label>Confirm Password:</label></td>
+                    <td><label>Password:</label></td>
                     <td>
                        <asp:TextBox ID="Conpass" runat="server" TextMode="Password" Height="29px" ></asp:TextBox>
-                       <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="Password doesn't match" ControlToValidate="Conpass" ControlToCompare="pass" ForeColor="Red"></asp:CompareValidator>
+                 <%--    <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="Password doesn't match" ControlToValidate="Conpass" ControlToCompare="pass" ForeColor="Red"></asp:CompareValidator>--%>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Password is complusory" ControlToValidate="Conpass" ForeColor="Red"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
 

@@ -67,23 +67,117 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="12th Convocation_2018 _01 %2889%29.jpeg" />
+    <Content Include="bda.aspx" />
+    <Content Include="bdaabout.aspx" />
+    <Content Include="bdacollaboration.aspx" />
+    <Content Include="bsc.aspx" />
+    <Content Include="bscabout.aspx" />
+    <Content Include="bsccollab.aspx" />
+    <Content Include="Btech.aspx" />
+    <Content Include="CbaAbout.aspx" />
+    <Content Include="cbacollaboration.aspx" />
+    <Content Include="cbaprogout.aspx" />
+    <Content Include="ChiefGuestBaner1.png" />
     <Content Include="Contact.aspx" />
     <Content Include="ContactData.aspx" />
+    <Content Include="csabout.aspx" />
+    <Content Include="cscollab.aspx" />
+    <Content Include="csprog.aspx" />
     <Content Include="Database.aspx" />
+    <Content Include="DocumentData.aspx" />
     <Content Include="DocumentUpload.aspx" />
+    <Content Include="download.jpeg" />
+    <Content Include="DSC_5823.jpeg" />
+    <Content Include="front.png" />
     <Content Include="GaurdianData.aspx" />
     <Content Include="Guardian.aspx" />
-    <Content Include="Images\edit.png" />
-    <Content Include="Images\save.jpg" />
+    <Content Include="ICT NEW LOGO.jpg" />
+    <Content Include="IMG-20191209-WA0026.jpg" />
+    <Content Include="IMG_1138.jpeg" />
+    <Content Include="IMG_7621.jpg" />
     <Content Include="index.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="Notifications.aspx" />
+    <Content Include="p1.jpg" />
     <Content Include="Registration.aspx" />
     <Content Include="Student.aspx" />
     <Content Include="StudentCorner.aspx" />
     <Content Include="StudentData.aspx" />
     <Content Include="Web.config" />
+    <Content Include="Why ICT.png" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bda.aspx.cs">
+      <DependentUpon>bda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bda.aspx.designer.cs">
+      <DependentUpon>bda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bdaabout.aspx.cs">
+      <DependentUpon>bdaabout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bdaabout.aspx.designer.cs">
+      <DependentUpon>bdaabout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bdacollaboration.aspx.cs">
+      <DependentUpon>bdacollaboration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bdacollaboration.aspx.designer.cs">
+      <DependentUpon>bdacollaboration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bsc.aspx.cs">
+      <DependentUpon>bsc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bsc.aspx.designer.cs">
+      <DependentUpon>bsc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bscabout.aspx.cs">
+      <DependentUpon>bscabout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bscabout.aspx.designer.cs">
+      <DependentUpon>bscabout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bsccollab.aspx.cs">
+      <DependentUpon>bsccollab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bsccollab.aspx.designer.cs">
+      <DependentUpon>bsccollab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Btech.aspx.cs">
+      <DependentUpon>Btech.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Btech.aspx.designer.cs">
+      <DependentUpon>Btech.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CbaAbout.aspx.cs">
+      <DependentUpon>CbaAbout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CbaAbout.aspx.designer.cs">
+      <DependentUpon>CbaAbout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cbacollaboration.aspx.cs">
+      <DependentUpon>cbacollaboration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cbacollaboration.aspx.designer.cs">
+      <DependentUpon>cbacollaboration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cbaprogout.aspx.cs">
+      <DependentUpon>cbaprogout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cbaprogout.aspx.designer.cs">
+      <DependentUpon>cbaprogout.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -98,12 +192,40 @@
     <Compile Include="ContactData.aspx.designer.cs">
       <DependentUpon>ContactData.aspx</DependentUpon>
     </Compile>
+    <Compile Include="csabout.aspx.cs">
+      <DependentUpon>csabout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="csabout.aspx.designer.cs">
+      <DependentUpon>csabout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cscollab.aspx.cs">
+      <DependentUpon>cscollab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cscollab.aspx.designer.cs">
+      <DependentUpon>cscollab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="csprog.aspx.cs">
+      <DependentUpon>csprog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="csprog.aspx.designer.cs">
+      <DependentUpon>csprog.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Database.aspx.cs">
       <DependentUpon>Database.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Database.aspx.designer.cs">
       <DependentUpon>Database.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentData.aspx.cs">
+      <DependentUpon>DocumentData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DocumentData.aspx.designer.cs">
+      <DependentUpon>DocumentData.aspx</DependentUpon>
     </Compile>
     <Compile Include="DocumentUpload.aspx.cs">
       <DependentUpon>DocumentUpload.aspx</DependentUpon>
@@ -139,6 +261,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Notifications.aspx.cs">
+      <DependentUpon>Notifications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Notifications.aspx.designer.cs">
+      <DependentUpon>Notifications.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registration.aspx.cs">
